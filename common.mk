@@ -337,6 +337,9 @@ PRODUCT_COPY_FILES += \
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
+# QTI fwk-detect
+PRODUCT_PACKAGES += \
+    libvndfwk_detect_jni.qti.vendor # Needed by CNE app
 
 # RIL
 PRODUCT_PACKAGES += \

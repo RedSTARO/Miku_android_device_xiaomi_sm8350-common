@@ -60,7 +60,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    hardware/xiaomi/vintf/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
@@ -153,7 +153,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2025-02-01
 
 # Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy_vndr/sm8450/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
