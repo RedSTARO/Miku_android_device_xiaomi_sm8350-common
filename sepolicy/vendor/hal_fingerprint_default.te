@@ -33,3 +33,5 @@ allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default input_device:dir r_dir_perms;
 allow hal_fingerprint_default input_device:chr_file rw_file_perms;
+allow hal_fingerprint_default system_data_root_file:dir { read open write add_name create };
+allow hal_fingerprint_default system_data_root_file:file { read write open getattr };
