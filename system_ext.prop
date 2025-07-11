@@ -1,2 +1,5 @@
 # DPM
 persist.vendor.dpm.feature=11
+
+# Silence minksocket logs
+persist.log.tag.minksocket=S
