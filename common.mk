@@ -333,15 +333,15 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # PowerShare
-ifeq ($(TARGET_HAS_POWERSHARE),true)
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.default
+# ifeq ($(TARGET_HAS_POWERSHARE),true)
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.powershare-service.default
 
-PRODUCT_PACKAGES += \
-    LineageSDKOverlayPowerShare
+# PRODUCT_PACKAGES += \
+#     LineageSDKOverlayPowerShare
 
-$(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
-endif
+# $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
+# endif
 
 # QTI
 PRODUCT_COPY_FILES += \
